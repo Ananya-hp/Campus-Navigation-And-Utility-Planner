@@ -1,0 +1,54 @@
+📘Campus Navigation And Utility Planner
+
+🔎 Introduction
+This project is designed to help model a university campus using data structures and algorithms. 
+It shows how trees and graphs can be applied to real‑world problems like storing building information, finding the shortest paths between locations, and planning cost‑effective utility layouts.
+
+1. 🏫 Building Data ADT
+ Each building is represented as a record with:
+ - BuildingID → unique integer identifier
+ - BuildingName → name of the building
+ - LocationDetails → description of the building’s purpose or location
+These records are stored in trees (BST and AVL) for fast searching and retrieval.
+
+2.🌳 Trees
+1. Binary Search Tree (BST)
+ - Stores building records in sorted order by ID.
+ - Supports insertion, search, and traversals (inorder, preorder, postorder).
+ - Limitation: can become unbalanced if data is sorted.
+
+2. AVL Tree
+ - A self‑balancing BST.
+ - Performs rotations (LL, RR, LR, RL) to keep the tree balanced.
+ - Ensures faster search and insertion compared to BST.
+ - Height comparison between BST and AVL shows AVL is more efficient
+
+3.📊 Graphs
+The campus is represented as a graph:
+-Nodes → Buildings
+-Edges → Paths between buildings with weights (distances)
+
+Implemented using:
+-Adjacency List → efficient for sparse graphs
+-Adjacency Matrix → easy to visualize connections
+
+4. Graph Traversals
+ - BFS (Breadth First Search) → explores buildings level by level.
+ - DFS (Depth First Search) → explores buildings deeply before backtracking.
+Both are demonstrated with user input for the starting building
+
+5. Algorithms
+  - Dijkstra’s Algorithm → finds the shortest path between buildings.
+  - Kruskal’s Algorithm → builds a Minimum Spanning Tree (MST) to plan utility layouts (like cables) with minimum cost.
+
+6. Expression Tree
+ - An expression tree is used to calculate energy bills.
+ - User enters a postfix expression (e.g., 120 6 * 150 + 50 -).
+ - The tree evaluates the expression step by step.
+ - Final result gives the total bill.
+
+🎯 Learning Outcomes
+1.Apply trees and graphs to practical campus navigation problems.
+2.Understand differences between BST and AVL trees.
+3.Implement graph algorithms for shortest path and minimum spanning tree.
+4.Use expression trees for real‑world calculations.
